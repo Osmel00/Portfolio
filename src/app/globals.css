@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar {
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -30%);
+    transition: all 1s ease-out;
+}
+
+.open {
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(2000px at 90% -30%);
+    transition: all 1s ease-out;
+}
