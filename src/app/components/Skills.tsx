@@ -19,7 +19,7 @@ const Skills: FC = () => {
     },
   };
   return (
-    <div className="skills">
+    <div id="skills" className="skills max-w-lg mx-auto">
       <h2 className="font-fontCanela text-4xl text-center pb-6">
         My <span className="text-[#c49809]">Skills</span>{" "}
       </h2>

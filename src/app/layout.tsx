@@ -31,7 +31,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body  className= {`${poppins.className} ${fontCanela.variable} bg-#f9f9f9 `}>{children}</body>
+      <body  className= {`${poppins.className} ${fontCanela.variable} bg-gradient-to-r from-white to-slate-400 `}>{children}</body>
     </html>
   );
 }

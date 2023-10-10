@@ -58,11 +58,26 @@ export const projectsData = [
   {
     title:'Dictionary App',
     tags:["React", "Node.js", "Tailwind", "Redux", "MongoDB",],
-    imageUrl:dictionaryApp,
+    imageUrl:musicApp,
   },
   {
     title:'Space Tourism Website',
     tags:["React", "Node.js", "Tailwind", "Redux", "MongoDB",],
-    imageUrl:spaceWebApp,
+    imageUrl:musicApp,
+  },
+  {
+    title:'Music App',
+    tags:["React", "Node.js", "Tailwind", "Redux", "MongoDB",],
+    imageUrl:musicApp,
+  },
+  {
+    title:'Dictionary App',
+    tags:["React", "Node.js", "Tailwind", "Redux", "MongoDB",],
+    imageUrl:musicApp,
+  },
+  {
+    title:'Space Tourism Website',
+    tags:["React", "Node.js", "Tailwind", "Redux", "MongoDB",],
+    imageUrl:musicApp,
   },
 ] ;

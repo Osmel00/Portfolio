@@ -21,10 +21,22 @@ export const Contact:FC = () => {
     const sendData  = async (form:any ) => {
         form.preventDefault();
         const res = await fetch('/api/send/',{
+          headers: {
+            'Content-Type': 'application/json'
+          },
             method: 'POST',
+            body: JSON.stringify({
+              name:form.target[1].value,
+              email:form.target[2].value,
+              message:form.target[3].value
+            })
         }) 
-        const data = await res.json();
-        console.log(data);
+      
+        //await res.json();
+        form.target['name'].value= ''
+        form.target['email'].value= ''
+        form.target['message'].value= ''
+        
       
        
        
@@ -33,14 +45,15 @@ export const Contact:FC = () => {
 return (
   
 <motion.div
+id='contact'
 variants={fadeIn}
 initial='initial'
 whileInView='animate'
 
-className="flex items-center justify-start bg-white">
+className="flex items-center justify-start ">
   <div className="mx-auto w-full max-w-lg">
-    <h1 className="text-4xl font-fontCanela">Contact <span className='text-acentColor'> Me</span></h1>
-    <p  className=" mt-3 text-gray-600"> Email us at  <a className='underline text-acentColor' href='mailto:osmelweb@gmail.com'>osmelweb@gmail.com</a> or message us here:</p>
+    <h1 className="py-4 text-4xl text-center font-fontCanela">Contact <span className='text-acentColor'> Me</span></h1>
+    <p  className=" mt-3 text-gray-600"> Email us at  <a className='underline font-semibold' href='mailto:osmelweb@gmail.com'>osmelweb@gmail.com</a> or message us here:</p>
 
     <form onSubmit={sendData}  className="mt-10">
        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" /> 
@@ -58,7 +71,7 @@ className="flex items-center justify-start bg-white">
           <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-600 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-acentColor peer-focus:dark:text-blue-500">Your message</label>
         </div>
       </div>
-      <button type="submit" className="mt-5  bg-acentColor  px-6 py-4 flex items-center  gap-2 rounded-full shadow-xl transition duration-300  hover:scale-110 text-white">Send Message <RiSendPlaneFill/> </button>
+      <button type="submit" name='btn' className="mt-5  bg-acentColor  px-6 py-4 flex items-center  gap-2 rounded-full shadow-xl transition duration-300  hover:scale-110 text-white">Send Message <RiSendPlaneFill/> </button>
     </form>
   </div>
 </motion.div>
