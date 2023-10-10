@@ -31,11 +31,11 @@ const Hero: FC<Props> = ({isTopOfPage}) => {
         </Link>
       </div>
       <div className="flex items-center text-[#333333] xl:hidden">
-        <BsSun class="hidden cursor-pointer text-3xl " />
+        <BsSun className ="hidden cursor-pointer text-3xl " />
         {!isOpen ? (
           <div className="cursor-pointer z-20  ">
             <CiMenuFries
-              class="text-gray-700"
+              className="text-gray-700"
               size={40}
               onClick={() => setOpen(!isOpen)}
             />
