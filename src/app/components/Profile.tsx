@@ -36,7 +36,7 @@ const Profile: FC = () => {
       <h1 className="font-fontCanela  text-4xl text-[#202020] xl:text-5xl xl:font-extrabold ">Osmel Faure</h1>
       <p className="text-2xl text-[#333333]">Fullstack Developer</p>
       <div className="social space-x-5 pt h-">
-        <button onClick ={() => window.open('http://localhost:3000/myCV.pdf')} className="py-4 px-6  border-[#c49809]  rounded-full shadow-xl transition duration-300  hover:scale-110">
+        <button onClick ={() => window.open('https://portfolio-eight-sooty-15.vercel.app/myCV.pdf')} className="py-4 px-6  border-[#c49809]  rounded-full shadow-xl transition duration-300  hover:scale-110">
           Download CV
         </button>
         <button className="py-4 px-6 bg-[#c49809]  rounded-full shadow-xl transition duration-300  hover:scale-110 ">
