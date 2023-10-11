@@ -34,7 +34,7 @@ const Project = ({ title, tags, imageUrl }: ProjectProps) => {
           quality={95}
           width={310}
           height={208}
-          className="h-[208px] object-top object-cover rounded-2xl overflow-hidden shadow-2xl sm:h-[300px] sm:w-[396px] sm:object-left-top xl:h-[250px] xl:w-[300px]"
+          className="h-[208px]  object-cover rounded-2xl overflow-hidden shadow-2xl  xl:shadow-black/70 sm:h-[300px] sm:w-[396px] sm:object-left-top xl:h-[250px] xl:w-[300px]"
         />
       
       <h3 className="font-fontCanela text-2xl justify-start leading-relaxed">{title}</h3>

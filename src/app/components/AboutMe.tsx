@@ -6,11 +6,11 @@ const AboutMe: FC = () => {
   const fadeLeft = {
     initial: {
       opacity: 0,
-      x: 100,
+      y: 100,
     },
     animate: {
       opacity: 1,
-      x: 0,
+      y: 0,
       transition: { duration: 1 },
     },
   };
@@ -26,10 +26,10 @@ const AboutMe: FC = () => {
         About <span className="text-acentColor">Me</span>
       </h2>
       <div className="xl:flex xl:items-center   ">
-      <div className="relative h-[295px]  after:content-[''] after:absolute after:left-0 after:top-0 after:rotate-6 after:bg-[#666] after:w-full after:h-full sm:h-[395px] sm:w-[395px] sm:mx-auto">
+      <div className="relative h-[250px] w-[250px] mx-auto after:content-[''] after:absolute after:left-0 after:top-0 after:rotate-6 after:bg-[#666] after:w-full after:h-full sm:h-[350px] sm:w-[350px] sm:mx-auto">
         <Image
-          width={408}
-          height={408}
+          width={390}
+          height={390}
           src={"/originCv.png"}
           alt="img about me"
           className="h-full w-full object-cover object-top rounded-xl relative z-[5] bg-slate-400 shadow-2xl  "

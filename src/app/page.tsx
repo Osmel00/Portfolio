@@ -25,7 +25,7 @@ export default function Home() {
         <Hero isTopOfPage={isTopOfPage} />
         <Profile />
       </section>
-      <main className="main px-10 pb-20 space-y-20 ">
+      <main className="main px-10  pb-20 space-y-20 ">
         
         <Projects />
         <AboutMe />
