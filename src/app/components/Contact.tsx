@@ -15,6 +15,11 @@ export const Contact: FC = () => {
       y: 0,
       transition: { duration: 1 },
     },
+    exit:{
+      opacity: 0,
+      y: 100,
+      transition: {delay:1 },
+    }
   };
 
   const sendData = async (form: any) => {
@@ -62,6 +67,7 @@ export const Contact: FC = () => {
       variants={fadeIn}
       initial="initial"
       whileInView="animate"
+      exit='exit'
       className="flex items-center justify-start "
     >
       <div className="mx-auto w-full max-w-lg">

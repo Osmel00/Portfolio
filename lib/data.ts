@@ -1,6 +1,8 @@
 import musicApp from "../public/spotifyclon.jpg";
-import dictionaryApp from "../public/dictionary.png";
-import spaceWebApp from "../public/spacetourism.jpg";
+import portfolio from "../public/portfolio.jpg"
+import calculator from "../public/calculator.jpg"
+import space from "../public/space.jpg"
+import todo from "../public/todo.jpg"
 export const skillsData = [
   {
     name: "CSS",
@@ -52,8 +54,23 @@ export const skillsData = [
 export const projectsData = [
   {
     title:'Music App',
-    tags:["React", "Node.js", "Tailwind", "Redux", "MongoDB",],
+    tags:["React", "Express.js", "Tailwind", "Redux", "MongoDB",],
     imageUrl:musicApp,
+  },
+  {
+    title:'Portfolio',
+    tags:["Next.js","Typescript", "Tailwind", "Framer Motion"],
+    imageUrl:portfolio,
+  },
+  {
+    title:'Calculator',
+    tags:["HTML", "CSS", "Javascript"],
+    imageUrl:calculator,
+  },
+  {
+    title:'Space Tourism Website',
+    tags:["React",  "Tailwind", "Framer Motion"],
+    imageUrl:space,
   },
   {
     title:'Dictionary App',
@@ -61,23 +78,8 @@ export const projectsData = [
     imageUrl:musicApp,
   },
   {
-    title:'Space Tourism Website',
-    tags:["React", "Node.js", "Tailwind", "Redux", "MongoDB",],
-    imageUrl:musicApp,
-  },
-  {
-    title:'Music App',
-    tags:["React", "Node.js", "Tailwind", "Redux", "MongoDB",],
-    imageUrl:musicApp,
-  },
-  {
-    title:'Dictionary App',
-    tags:["React", "Node.js", "Tailwind", "Redux", "MongoDB",],
-    imageUrl:musicApp,
-  },
-  {
-    title:'Space Tourism Website',
-    tags:["React", "Node.js", "Tailwind", "Redux", "MongoDB",],
-    imageUrl:musicApp,
+    title:'Todo',
+    tags:["React","CSS", "Framer Motion",],
+    imageUrl:todo,
   },
 ] ;

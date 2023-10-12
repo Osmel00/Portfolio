@@ -31,16 +31,21 @@ const Project = ({ title, tags, imageUrl }: ProjectProps) => {
     <motion.div
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 100 }}
+      transition={{duration:1}}
+      viewport={{once: true,amount:0.5}}
       className=" space-y-2  mb-10 p-2 grid  place-content-center xl:space-y-3  "
     >
-      <figure className="xl:overflow-hidden rounded-2xl">
+      <figure className="xl:overflow-hidden rounded-2xl cursor-pointer">
         <Image
           src={imageUrl}
           alt={title}
           quality={95}
           width={310}
           height={208}
-          className="h-[208px]  object-cover rounded-2xl overflow-hidden shadow-2xl  xl:shadow-black/70 sm:h-[300px] sm:w-[396px] sm:object-left-top xl:h-[250px] xl:w-[300px] xl:hover:transform xl:hover:scale-125 xl:hover:translate-y-1/4 xl:transition-transform xl:ease-in-out xl:duration-500 xl:transform xl:scale-150 xl:origin-bottom-left xl:rounded-none"
+          className="h-[208px]  object-cover rounded-2xl overflow-hidden shadow-2xl  xl:shadow-black/70 sm:h-[300px] sm:w-[396px] xl:h-[250px] xl:w-[300px] 
+          
+          xl:hover:transform xl:hover:scale-[1.25]  xl:hover:-translate-y-1/4  xl:transition-transform xl:hover:object-right xl:ease-in-out xl:duration-500 xl:scale-150 xl:origin-top-left xl:rounded-none"
         />
       </figure>
       <h3 className="font-fontCanela text-2xl justify-start leading-relaxed">
