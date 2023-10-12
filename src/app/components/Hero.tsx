@@ -6,7 +6,8 @@ import { CiMenuFries } from "react-icons/ci";
 import { TfiClose } from "react-icons/tfi";
 import Link from "next/link";
 import { motion } from "framer-motion";
-
+import Image from "next/image";
+import logo from "../../../public/logo.png"
 type Props = {
   isTopOfPage: boolean;
 } 
@@ -23,11 +24,12 @@ const Hero: FC<Props> = ({isTopOfPage}) => {
       viewport={{
         once: true,
       }}
-       className={`header  pb-10  flex justify-between items-center   px-10   xl:mx-auto xl:fixed  xl:right-0  xl:left-0  xl:py-10 xl:justify-around xl:transition-shadow   ${isTopOfPage ? null : "headerXL" }   `}>
+       className={`header pb-0  flex justify-between items-center   px-10   xl:mx-auto xl:fixed  xl:right-0  xl:left-0  xl:py-10 xl:justify-around xl:transition-shadow   ${isTopOfPage ? null : "headerXL" }   `}>
 
-      <div className=" cursor-pointer text-[#333333] text-2xl flex items-center  font-fontCanela  z-20 xl:text-3xl">
-       <Link href={'/'}> Osmel Faure{" "}
-        <span className="text-[#c49809] pb-1 font-bold text-4xl">.</span>
+      <div className=" cursor-pointer flex items-center  z-20  ">
+       <Link href={'/'}>
+        {/* <span className="text-[#c49809] pb-1 font-bold text-4xl">.</span> */}
+        <Image className="w-32 h-32 md:w-52 md:h-52 xl:w-52 xl:h-52"  src={logo} alt="Logo"/>
         </Link>
       </div>
       <div className="flex items-center text-[#333333] xl:hidden">
