@@ -24,12 +24,12 @@ const Hero: FC<Props> = ({isTopOfPage}) => {
       viewport={{
         once: true,
       }}
-       className={`header pb-0  flex justify-between items-center   px-10   xl:mx-auto xl:fixed  xl:right-0  xl:left-0  xl:py-10 xl:justify-around xl:transition-shadow   ${isTopOfPage ? null : "headerXL" }   `}>
+       className={`header  flex justify-between items-center   px-10   xl:mx-auto xl:fixed  xl:right-0  xl:left-0  xl:py-0 xl:justify-around xl:transition-shadow   ${isTopOfPage ? null : "headerXL" }   `}>
 
       <div className=" cursor-pointer flex items-center  z-20  ">
        <Link href={'/'}>
         {/* <span className="text-[#c49809] pb-1 font-bold text-4xl">.</span> */}
-        <Image className="w-32 h-32 md:w-52 md:h-52 xl:w-52 xl:h-52"  src={logo} alt="Logo"/>
+        <Image width={300} height={300} quality={100} className="w-32 h-32  md:w-36 md:h-36"  src={logo} alt="Logo"/>
         </Link>
       </div>
       <div className="flex items-center text-[#333333] xl:hidden">
