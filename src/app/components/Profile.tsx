@@ -36,13 +36,14 @@ const Profile: FC = () => {
       <h1 className="font-fontCanela  text-4xl text-[#202020] xl:text-5xl xl:font-extrabold ">Osmel Faure</h1>
       <p className="text-2xl text-[#333333]">Fullstack Developer</p>
       <div className="social space-x-5 pt h-">
-        <button onClick ={() => window.open('https://portfolio-eight-sooty-15.vercel.app/myCV.pdf')} className="py-4 px-6  border-[#c49809]  rounded-full shadow-xl transition duration-300  hover:scale-110">
+        <button onClick ={() => window.open('https://portfolio-eight-sooty-15.vercel.app/myCV.pdf')} className="py-4 px-6   rounded-full shadow-xl transition duration-300  hover:scale-110">
           Download CV
         </button>
         <button className="py-4 px-6 bg-[#c49809]  rounded-full shadow-xl transition duration-300  hover:scale-110 ">
          <Link href={'#contact'}> Contact Info  </Link> 
         </button>
         <div className="flex justify-center space-x-5 mt-10 cursor-pointer ">
+          <Link href={'https://www.linkedin.com/in/osmel-faure-gonzalez-91a9a018a'} target="_blank">
           <Image 
             className=" h-[36px] w-[36px] object-top object-cover transition duration-300  hover:scale-110 "
             src="/linkedin.png"
@@ -50,6 +51,8 @@ const Profile: FC = () => {
             height={36}
             alt="Picture linkedin"
           />
+          </Link>
+          <Link href={'https://github.com/Osmel00'} target="_blank">
           <Image
             className="h-[36px] w-[36px] object-top object-cover transition duration-300  hover:scale-110 "
             src="/github.png"
@@ -57,6 +60,7 @@ const Profile: FC = () => {
             height={36}
             alt="Picture github"
           />
+          </Link>
         </div>
       </div>
       </div>
