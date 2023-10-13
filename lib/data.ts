@@ -56,7 +56,7 @@ export const projectsData = [
       "Framer Motion",
     ],
     imageUrl: musicApp,
-    linkUrl: "https://app.netlify.com/sites/creative-smakager-4c6064/overview",
+    linkUrl: "", //https://app.netlify.com/sites/creative-smakager-4c6064/overview
   },
   {
     title: "Dictionary App",
