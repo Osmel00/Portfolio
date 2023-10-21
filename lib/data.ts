@@ -1,4 +1,4 @@
-import musicApp from "../public/spotifyclon.jpg";
+import pomodoro from "../public/pomodoro.jpg";
 import portfolio from "../public/portfolio.jpg";
 import calculator from "../public/calculator.jpg";
 import space from "../public/space.jpg";
@@ -48,15 +48,13 @@ export const projectsData = [
   {
     title: "Music App",
     tags: [
+      "Astro",
       "React",
-      "Express.js",
       "Tailwind",
-      "Redux",
-      "MongoDB",
       "Framer Motion",
     ],
-    imageUrl: musicApp,
-    linkUrl: "", //https://app.netlify.com/sites/creative-smakager-4c6064/overview
+    imageUrl: pomodoro,
+    linkUrl: "https://pomodoro-self-eta.vercel.app/", 
   },
   {
     title: "Dictionary App",
