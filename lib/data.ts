@@ -46,7 +46,7 @@ export const skillsData = [
 
 export const projectsData = [
   {
-    title: "Music App",
+    title: "Pomodoro ",
     tags: [
       "Astro",
       "React",
